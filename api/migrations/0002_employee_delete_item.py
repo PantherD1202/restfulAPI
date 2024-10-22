@@ -13,23 +13,14 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name="Employee",
             fields=[
-                (
-                    "id",
-                    models.BigAutoField(
-                        auto_created=True,
-                        primary_key=True,
-                        serialize=False,
-                        verbose_name="ID",
-                    ),
-                ),
                 ("first_name", models.CharField(max_length=50)),
                 ("last_name", models.CharField(max_length=50)),
                 ("department", models.CharField(max_length=50)),
                 ("salary", models.DecimalField(decimal_places=2, max_digits=10)),
                 ("hire_date", models.DateField()),
             ],
-        ),
-        migrations.DeleteModel(
-            name="Item",
+        options={
+                "db_table": "emplyees",
+            },
         ),
     ]
