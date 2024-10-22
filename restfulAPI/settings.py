@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'rest_framework',
-    'api',
+    'api_app',
+    # 'api',
     'corsheaders',
 
 ]
@@ -84,7 +85,7 @@ WSGI_APPLICATION = "restfulAPI.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        'NAME': 'DRF_API',
+        'NAME': 'Sample_DB_Schema',
         'USER': 'postgres',
         'PASSWORD': 'danh123',
         'HOST': 'localhost',  # Hoặc IP của PostgreSQL
